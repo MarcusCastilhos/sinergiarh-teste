@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #5956e9;
+  --color-secondary: #232233;
+  --color-gray: #6c6c72;
+  --color-hover: #5856e98e;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", serif;
+}
+
+/* Remover estilos padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remover decoração de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover estilos padrão de formulários */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Garantir que imagens sejam responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remover espaçamento padrão de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remover estilos padrão de elementos de foco */
+:focus {
+  outline: none;
+}
+
+/* Garantir que elementos HTML5 sejam exibidos como blocos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Remover estilos padrão de parágrafos e cabeçalhos */
+h1 {
+  font-size: 3.81em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.052em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2.441em;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.953em;
+  font-weight: bold;
+}
+h5 {
+  font-size: 1.563em;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* Remover espaçamento padrão de elementos inline */
+b,
+strong,
+i,
+em,
+small {
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+
+/* Remover estilos padrão de elementos de citação */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}

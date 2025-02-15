@@ -1,0 +1,18 @@
+.header-container {
+  display: block;
+}
+
+.navBar-ctnr {
+  display: block;
+}
+
+.banner-ctnr {
+  display: block;
+  padding-top: 15%;
+}
+
+@media (max-width: 768px) {
+  .banner-ctnr {
+    padding-top: 40%;
+  }
+}
