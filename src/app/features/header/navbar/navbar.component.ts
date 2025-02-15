@@ -54,6 +54,20 @@ export class NavbarComponent implements OnInit {
   }
 
   toggleMenu(): void {
+    const navLinksMobile = document.querySelectorAll(
+      '.nav-list-left-mobile a, .nav-list-right-mobile a'
+    );
+
+    navLinksMobile.forEach((link) => {
+      link.addEventListener('click', () => {
+        menuContainer?.classList.remove('active');
+        console.log(
+          'Menu Fechado:',
+          !menuContainer?.classList.contains('active')
+        );
+      });
+    });
+
     const menuContainer = document.getElementById('menu-container');
     if (menuContainer) {
       menuContainer.classList.toggle('active');

@@ -180,7 +180,6 @@
 }
 
 .menu-left-mobile {
-  display: none;
   width: 30%;
   justify-content: center;
   align-items: center;
@@ -194,7 +193,7 @@
 }
 
 .menu-container-mobile.active .menu-left-mobile {
-  display: flex; /* Exibe o menu-left-mobile quando ativo */
+  display: flex;
 }
 
 .nav-list-left-mobile ul {
