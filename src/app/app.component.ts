@@ -2,10 +2,11 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { HeaderComponent } from './features/header/header.component';
 import { AboutComponent } from './features/body/about/about.component';
 import { ScrollService } from './core/services/scroll.service';
+import { JobServiceComponent } from './features/body/job-service/job-service.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, AboutComponent],
+  imports: [HeaderComponent, AboutComponent, JobServiceComponent],
   providers: [ScrollService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
