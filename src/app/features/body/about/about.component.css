@@ -1,0 +1,252 @@
+.team-slider-btn {
+  display: none;
+}
+
+.about-container {
+  margin: 10% 5%;
+  justify-items: center;
+  min-width: 250px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--color-secondary);
+}
+
+.mission-container h2 {
+  width: 100%;
+  font-weight: 400;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.mission-content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mission-content {
+  width: 50%;
+  align-content: center;
+  color: var(--color-secondary);
+}
+
+.mission-content p {
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 3vh;
+  padding: 0 2rem;
+}
+
+.mission-image {
+  width: 50%;
+  justify-items: center;
+}
+
+.vision-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--color-secondary);
+  padding-top: 2rem;
+}
+
+.vision-container h2 {
+  font-weight: 400;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.vision-content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.vision-list-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+}
+
+.vision-list-container ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.vision-list-container ul li p {
+  font-size: 2.5vh;
+}
+
+.vision-list-container ul li p:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+}
+
+.vision-image {
+  width: 50%;
+  align-content: center;
+}
+
+.team-container {
+  width: 100%;
+}
+
+.team-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-text-container h2 {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.team-text-container p {
+  text-align: justify;
+  font-size: 3vh;
+  padding: 2rem 10rem;
+}
+
+.team-list-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-list-container ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 1rem;
+}
+
+.team-list-container ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.team-member {
+  justify-items: center;
+}
+
+.team-member img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.team-member-info {
+  padding: 1rem 0;
+}
+
+.team-member-info h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .mission-content-container {
+    flex-direction: column;
+  }
+
+  .mission-content {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .mission-image {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .vision-content-container {
+    flex-direction: column;
+  }
+
+  .vision-list-container {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .vision-image {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .team-text-container p {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  .team-list-container {
+    position: relative;
+    min-width: 150px;
+    width: 85%; /* Ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden; /* Garante que apenas um membro apareça */
+  }
+
+  .team-list-container ul {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    gap: 0;
+  }
+
+  .team-list-container li {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Estilizando os botões de navegação */
+  .team-slider-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .team-slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .prev-btn {
+    left: 0;
+    z-index: 10;
+  }
+
+  .next-btn {
+    right: 0;
+    z-index: 10;
+  }
+}

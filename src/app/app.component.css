@@ -1,6 +1,21 @@
-.appBody {
+.homeWpp {
   background-image: url("/img/banner.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
+}
+
+section {
+  scroll-margin-top: 150px;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }

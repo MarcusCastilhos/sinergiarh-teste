@@ -1,0 +1,120 @@
+<div class="about-container">
+  <div class="content-container">
+    <div class="mission-container">
+      <h2>Nossa missão</h2>
+      <div class="mission-content-container">
+        <div class="mission-content">
+          <p>
+            Nossa missão é prestar serviços de Consultoria em RH de forma
+            estratégica e alinhada às necessidades de nossos parceiros e
+            clientes. Acreditamos que o capital humano é o maior diferencial
+            competitivo e, por isso, dedicamos nossos esforços para garantir que
+            cada contratação seja uma SINERGIA perfeita entre as expectativas
+            das empresas e as aspirações dos profissionais.
+          </p>
+        </div>
+        <!--Mission Content-->
+        <div class="mission-image">
+          <img
+            src="https://images.unsplash.com/photo-1595476147510-1a9b33600fc8?auto=format&fit=crop&w=656&h=497"
+            alt=""
+          />
+        </div>
+        <!--Mission Image-->
+      </div>
+    </div>
+    <!--Mission Container-->
+    <div class="vision-container">
+      <h2>Nossos valores</h2>
+      <div class="vision-content">
+        <div class="vision-content-container">
+          <div class="vision-image">
+            <img src="./img/vision-img.jpg" alt="Vision" />
+          </div>
+          <!--Vision Image-->
+          <div class="vision-list-container">
+            <ul>
+              <li>
+                <p>Comprometimento:</p>
+                <p>
+                  Estamos empenhados em entregar soluções de alta qualidade que
+                  superem as expectativas de nossos clientes e candidatos.
+                </p>
+              </li>
+              <li>
+                <p>Transparencia:</p>
+                <p>
+                  Valorizamos a comunicação aberta e honesta, garantindo clareza
+                  em todas as etapas do processo.
+                </p>
+              </li>
+              <li>
+                <p>Inovação:</p>
+                <p>
+                  Utilizamos as melhores práticas e tecnologias avançadas para
+                  otimizar nossos serviços e oferecer uma experiência
+                  diferenciada.
+                </p>
+              </li>
+              <li>
+                <p>Parceria:</p>
+                <p>
+                  Trabalhamos em estreita colaboração com nossos clientes e
+                  candidatos, entendendo suas necessidades e construindo
+                  relacionamentos duradouros.
+                </p>
+              </li>
+              <li>
+                <p>Ética:</p>
+                <p>
+                  Mantemos os mais altos padrões éticos em todas as nossas
+                  ações, respeitando a confidencialidade e a integridade de
+                  todos os envolvidos.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--Vision List Container-->
+        </div>
+        <!--Vision Content-->
+      </div>
+      <!--Vision Content Container-->
+    </div>
+    <!--Vision Container-->
+  </div>
+  <!--Content Container-->
+  <div class="team-container">
+    <div class="team-content">
+      <div class="team-text-container">
+        <h2>Nossa equipe</h2>
+        <p>
+          Nossa equipe de especialistas em RH tem o compromisso de oferecer
+          soluções personalizadas e abrangentes, adaptadas aos requisitos de
+          cada empresa. Estamos prontos para ajudar em todas as etapas do
+          processo de contratação.
+        </p>
+      </div>
+      <div class="team-list-container">
+        <button class="team-slider-btn prev-btn" (click)="prevSlide()">
+          <img src="./icons-white/arrow-left-s-fill.png" alt="" />
+        </button>
+        <ul #slider>
+          <li *ngFor="let member of teamMembers" class="team-member">
+            <img [src]="member.image" [alt]="member.name" />
+            <div class="team-member-info">
+              <h3>{{ member.name }}</h3>
+              <p>{{ member.role }}</p>
+            </div>
+          </li>
+        </ul>
+        <button class="team-slider-btn next-btn" (click)="nextSlide()">
+          <img src="./icons-white/arrow-right-s-fill.png" alt="" />
+        </button>
+      </div>
+      <!--Team List Container-->
+    </div>
+    <!--Team Content-->
+  </div>
+  <!--Team Container-->
+</div>
+<!--About Container-->

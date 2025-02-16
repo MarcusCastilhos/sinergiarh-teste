@@ -8,11 +8,24 @@
 
 .banner-ctnr {
   display: block;
-  padding-top: 15%;
+  width: 100%;
+  height: 100%;
+  padding-top: 25vh;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
   .banner-ctnr {
-    padding-top: 40%;
+    padding-top: 15vh;
   }
 }
